@@ -158,34 +158,43 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 3px;
+    gap: 2px;
     min-width: 0;
+    overflow: hidden;
   }
 
   .l-lump {
     font-family: 'Calibri', sans-serif;
-    font-size: 15px;
+    font-size: 12.67px;
     font-weight: 700;
     color: #000;
     letter-spacing: 0.06em;
-    white-space: nowrap;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: break-word;
   }
 
   .l-item {
     font-family: 'Calibri', sans-serif;
     font-weight: 700;
-    font-size: 9px;
-    color: #555;
+    font-size: 12.67px;
+    color: #111;
     letter-spacing: 0.03em;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.4;
   }
 
   .l-name {
     font-family: 'Calibri', sans-serif;
-    font-size: 10px;
+    font-size: 14.67px;
     font-weight: 700;
     color: #222;
     line-height: 1.35;
     word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
   }
 
   .l-color {
@@ -221,6 +230,8 @@
     border-radius: 3px;
     font-weight: 700;
     letter-spacing: 0.05em;
+    white-space: normal;
+    word-break: break-word;
   }
 
   .l-date {
@@ -244,7 +255,8 @@
 
     .label {
       width: 76mm;
-      height: 38mm;
+      min-height: 38mm;
+      height: auto;
       border: none;
       border-radius: 0;
       padding: 2mm 3mm;
@@ -253,14 +265,14 @@
     }
 
     #qrImg    { width: 30mm; height: 30mm; }
-    .qr-lump-id { font-size: 6pt; }
-    .l-lump   { font-size: 11pt; }
-    .l-item   { font-size: 6.5pt; }
-    .l-name   { font-size: 7pt; }
-    .l-color  { font-size: 6.5pt; }
-    .l-meters { font-size: 9pt; }
-    .l-rack   { font-size: 6.5pt; }
-    .l-date   { font-size: 6pt; }
+    .qr-lump-id { font-size: 9.5pt; font-family: Calibri, sans-serif; font-weight: 700; }
+    .l-lump   { font-size: 9.5pt; font-family: Calibri, sans-serif; font-weight: 700; }
+    .l-item   { font-size: 9.5pt; font-family: Calibri, sans-serif; font-weight: 700; color: #111; white-space: normal; word-break: break-word; overflow-wrap: break-word; }
+    .l-name   { font-size: 11pt; font-family: Calibri, sans-serif; font-weight: 700; white-space: normal; word-break: break-word; overflow-wrap: break-word; line-height: 1.4; }
+    .l-color  { font-size: 9.5pt; }
+    .l-meters { font-size: 9.5pt; font-family: Calibri, sans-serif; font-weight: 700; }
+    .l-rack   { font-size: 9.5pt; font-family: Calibri, sans-serif; font-weight: 700; }
+    .l-date   { font-size: 9.5pt; font-family: Calibri, sans-serif; font-weight: 700; }
 
     @page {
       size: 76mm 38mm;
@@ -311,7 +323,6 @@
       <div class="l-lump"  id="l_lump_id"></div>
       <div class="l-item"  id="l_item_code"></div>
       <div class="l-name"  id="l_name"></div>
-      <div class="l-color" id="l_color"></div>
       <div class="l-bottom">
         <div class="l-meters" id="l_meters"></div>
         <div class="l-rack"   id="l_rack"></div>
