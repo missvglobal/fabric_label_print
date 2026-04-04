@@ -6,16 +6,16 @@
 <title>Fabric Lump Label</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Courier New', monospace; background: #f5f5f0; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; padding: 24px 16px; }
+  body { font-family: 'Calibri', sans-serif; background: #f5f5f0; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; padding: 24px 16px; }
   .screen-ui { width: 100%; max-width: 480px; margin-bottom: 24px; }
   .screen-ui h1 { font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #333; margin-bottom: 2px; }
   .screen-ui p { font-size: 11px; color: #888; margin-bottom: 16px; letter-spacing: 0.04em; }
   .fields { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
-  .fields input { font-family: 'Courier New', monospace; font-size: 12px; padding: 7px 10px; border: 1px solid #ddd; border-radius: 4px; background: white; color: #222; width: 100%; outline: none; }
+  .fields input { font-family: 'Calibri', sans-serif; font-size: 12px; padding: 7px 10px; border: 1px solid #ddd; border-radius: 4px; background: white; color: #222; width: 100%; outline: none; }
   .fields input:focus { border-color: #999; }
   .fields input.full { grid-column: 1 / -1; }
   .btn-row { display: flex; gap: 8px; }
-  .btn { font-family: 'Courier New', monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 8px 18px; border-radius: 4px; border: 1.5px solid #333; background: white; color: #333; cursor: pointer; transition: background 0.15s, color 0.15s; }
+  .btn { font-family: 'Calibri', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 8px 18px; border-radius: 4px; border: 1.5px solid #333; background: white; color: #333; cursor: pointer; transition: background 0.15s, color 0.15s; }
   .btn:hover { background: #333; color: white; }
   .btn.primary { background: #333; color: white; }
   .btn.primary:hover { background: #000; border-color: #000; }
@@ -28,15 +28,15 @@
   .label { width: 288px; min-height: 144px; height: auto; background: white; border: 1px solid #bbb; border-radius: 4px; display: flex; flex-direction: row; align-items: center; padding: 8px 10px; gap: 10px; overflow: hidden; }
   .qr-block { flex-shrink: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; }
   #qrImg { display: block; width: 100px; height: 100px; }
-  .qr-lump-id { font-family: 'Courier New', monospace; font-size: 9px; font-weight: 700; color: #333; letter-spacing: 0.08em; text-align: center; }
+  .qr-lump-id { font-family: 'Calibri', sans-serif; font-size: 9px; font-weight: 700; color: #333; letter-spacing: 0.08em; text-align: center; }
   .info-block { flex: 1; display: flex; flex-direction: column; justify-content: space-between; gap: 2px; min-width: 0; overflow: hidden; }
-  .l-lump { font-family: 'Courier New', monospace; font-size: 10px; font-weight: 700; color: #000; letter-spacing: 0.06em; white-space: normal; word-break: break-word; }
-  .l-item { font-family: 'Courier New', monospace; font-size: 9px; color: #555; letter-spacing: 0.03em; white-space: normal; word-break: break-word; }
-  .l-name { font-family: 'Courier New', monospace; font-size: 14px; font-weight: 700; color: #222; line-height: 1.35; word-break: break-word; overflow-wrap: break-word; white-space: normal; }
+  .l-lump { font-family: 'Calibri', sans-serif; font-size: 15px; font-weight: 700; color: #000; letter-spacing: 0.06em; white-space: normal; word-break: break-word; }
+  .l-item { font-family: 'Calibri', sans-serif; font-size: 9px; color: #555; letter-spacing: 0.03em; white-space: normal; word-break: break-word; }
+  .l-name { font-family: 'Calibri', sans-serif; font-size: 10px; font-weight: 700; color: #222; line-height: 1.35; word-break: break-word; overflow-wrap: break-word; white-space: normal; }
   .l-bottom { display: flex; align-items: center; gap: 6px; margin-top: 2px; border-top: 0.5px solid #ddd; padding-top: 2px; }
-  .l-meters { font-family: 'Courier New', monospace; font-size: 12px; font-weight: 700; color: #111; }
-  .l-rack { font-family: 'Courier New', monospace; font-size: 9px; background: #222; color: #fff; padding: 1px 6px; border-radius: 3px; font-weight: 700; letter-spacing: 0.05em; }
-  .l-date { font-family: 'Courier New', monospace; font-size: 9px; color: #888; margin-left: auto; }
+  .l-meters { font-family: 'Calibri', sans-serif; font-size: 12px; font-weight: 700; color: #111; }
+  .l-rack { font-family: 'Calibri', sans-serif; font-size: 9px; background: #222; color: #fff; padding: 1px 6px; border-radius: 3px; font-weight: 700; letter-spacing: 0.05em; }
+  .l-date { font-family: 'Calibri', sans-serif; font-size: 9px; color: #888; margin-left: auto; }
 
   @media print {
     body { background: white; padding: 0; display: block; }
