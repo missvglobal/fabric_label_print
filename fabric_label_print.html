@@ -41,7 +41,7 @@
   gap: 2mm;
   overflow: hidden;
 }
-  .qr-block { flex-shrink: 0; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: 3px; }
+  .qr-block { flex-shrink: 0; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: 1.5px; }
   #qrImg { display: block; width: 100px; height: 100px; }
   .qr-lump-id { font-family: Calibri; font-size: 9px; font-weight: 700; color: #333; letter-spacing: 0.08em; text-align: center; }
   .info-block {
@@ -52,6 +52,7 @@
   gap: 2px;
   min-width: 0;
   overflow: hidden;
+margin-top: -2px;
 }
   .l-lump { font-family: Calibri; font-size: 15px; font-weight: 700; color: #000; letter-spacing: 0.06em; white-space: normal; word-break: break-word;  margin-bottom: 2px; }
   .l-item { font-family: Calibri; font-size: 9px; color: #555; letter-spacing: 0.03em; white-space: normal; word-break: break-word; }
@@ -143,7 +144,7 @@
 <div class="label-container">
   <div class="label" id="label">
     <div class="qr-block">
-      <div class="l-lump" id="l_lump_id" style="font-size: 20px;font-weight:700;font-family:lato;top:40x;margin-bottom:8px;"></div>
+      <div class="l-lump" id="l_lump_id" style="font-size: 20px;font-weight:700;font-family:lato;top:40x;"></div>
       <img id="qrImg" src="" alt="QR" />
       <div class="qr-lump-id" id="qr_lump_label" style="display:none"></div>
     </div>
